@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created by editing items created with Recipe Robot v1.1.2 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of IntermediaUnite and creates a package.</string>
+	<key>Identifier</key>
+	<string>com.github.metroeast.pkg.IntermediaUnite</string>
+	<key>Input</key>
+	<dict>
+		<key>BUNDLE_ID</key>
+		<string>net.intermedia.unite-desktop</string>
+		<key>NAME</key>
+		<string>IntermediaUnite</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.metroeast.download.IntermediaUnite</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.metroeast.download.IntermediaUnite</key>
+			<dict>
+				<key>path</key>
+				<string>~/Library/AutoPkg/Recipes/org.metroeast.autopkg-recipes/IntermediaUnite.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>b6a1762b897d082c4e93e69933aa0bc162195f3237a0243ea869617945a98bce</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+			<string>AppPkgCreator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
