@@ -10,7 +10,7 @@
     <dict>
         <key>NAME</key>
         <string>GoogleChrome</string>
-		<key>TITLE</key>
+        <key>TITLE</key>
         <string>Google Chrome</string>
         <key>DAYS_TO_PRODUCTION</key>
         <string>3</string>
@@ -19,41 +19,41 @@
     <string>0.2.0</string>
     <key>ParentRecipe</key>
     <string>com.github.rtrouton.pkg.googlechrome</string>
-	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
                 <key>pkg_path</key>
                 <string>%pkg_path%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.honestpuck.PatchBot/JPCImporter</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>title</key>
-				<string>%NAME%</string>
-				<key>patch</key>
-				<string>%TITLE%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.honestpuck.PatchBot/PatchManager</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>package</key>
-				<string>%NAME%</string>
-				<key>patch</key>
-				<string>%TITLE%</string>
-				<key>days_to_production</key>
-				<string>%DAYS_TO_PRODUCTION%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.honestpuck.PatchBot/Production</string>
-		</dict>
-	</array>
+            </dict>
+            <key>Processor</key>
+            <string>com.honestpuck.PatchBot/JPCImporter</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>title</key>
+                <string>%NAME%</string>
+                <key>patch</key>
+                <string>%TITLE%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.honestpuck.PatchBot/PatchManager</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>package</key>
+                <string>%NAME%</string>
+                <key>patch</key>
+                <string>%TITLE%</string>
+                <key>days_to_production</key>
+                <string>%DAYS_TO_PRODUCTION%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.honestpuck.PatchBot/Production</string>
+        </dict>
+    </array>
 </dict>
 </plist>

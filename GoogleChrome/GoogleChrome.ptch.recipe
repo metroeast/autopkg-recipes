@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>Description</key>
-		<string>Update Jamf patch definition for Google Chrome</string>
-		<key>Identifier</key>
-		<string>com.github.metroeast.ptch.GoogleChrome</string>
-		<key>Input</key>
-		<dict></dict>
-		<key>MinimumVersion</key>
-		<string>1.0.0</string>
-		<key>Process</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>title</key>
-					<string>GoogleChrome</string>
-					<key>patch</key>
-					<string>Google Chrome</string>
-				</dict>
-				<key>Processor</key>
-				<string>com.honestpuck.PatchBot/PatchManager</string>
-			</dict>
-		</array>
-	</dict>
+    <dict>
+        <key>Description</key>
+        <string>Update Jamf patch definition for Google Chrome</string>
+        <key>Identifier</key>
+        <string>com.github.metroeast.ptch.GoogleChrome</string>
+        <key>Input</key>
+        <dict></dict>
+        <key>MinimumVersion</key>
+        <string>1.0.0</string>
+        <key>Process</key>
+        <array>
+            <dict>
+                <key>Arguments</key>
+                <dict>
+                    <key>title</key>
+                    <string>GoogleChrome</string>
+                    <key>patch</key>
+                    <string>Google Chrome</string>
+                </dict>
+                <key>Processor</key>
+                <string>com.honestpuck.PatchBot/PatchManager</string>
+            </dict>
+        </array>
+    </dict>
 </plist>
