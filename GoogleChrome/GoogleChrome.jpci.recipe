@@ -33,7 +33,7 @@
         <dict>
             <key>Arguments</key>
             <dict>
-                <key>title</key>
+                <key>package</key>
                 <string>%NAME%</string>
                 <key>patch</key>
                 <string>%TITLE%</string>
