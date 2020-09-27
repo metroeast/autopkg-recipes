@@ -40,9 +40,9 @@
             <key>Arguments</key>
             <dict>
                 <key>package</key>
-                <string>%NAME%</string>
+                <string>%PACKAGE%</string>
                 <key>patch</key>
-                <string>%TITLE%</string>
+                <string>%PATCH%</string>
             </dict>
             <key>Processor</key>
             <string>com.honestpuck.PatchBot/PatchManager</string>
