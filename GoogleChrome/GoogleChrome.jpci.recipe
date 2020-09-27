@@ -3,17 +3,23 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Google Chrome disk image and imports the package Jamf policies and patch management.</string>
+    <string>Downloads the latest Google Chrome disk image, imports the package into Jamf Pro Cloud, and attaches the package to the test policies.  Moving test package to production policies conditionally processess afterwards, based on weekday and start and end times.</string>
     <key>Identifier</key>
     <string>com.github.metroeast.jpci.googlechrome</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
+        <key>PACKAGE</key>
         <string>GoogleChrome</string>
-        <key>TITLE</key>
+        <key>PATCH</key>
         <string>Google Chrome</string>
-        <key>DAYS_TO_PRODUCTION</key>
+        <key>DAYS_UNTIL_PROD</key>
         <string>3</string>
+        <key>PROD_WEEKDAYS/key>
+        <string>0123</string>
+        <key>PROD_NOT_BEFORE</key>
+        <string>06:00</string>
+        <key>PROD_NOT_AFTER</key>
+        <string>19:00</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
@@ -45,11 +51,17 @@
             <key>Arguments</key>
             <dict>
                 <key>package</key>
-                <string>%NAME%</string>
+                <string>%PACKAGE%</string>
                 <key>patch</key>
-                <string>%TITLE%</string>
-                <key>days_to_production</key>
-                <string>%DAYS_TO_PRODUCTION%</string>
+                <string>%PATCH%</string>
+                <key>days_until_prod</key>
+                <string>%DAYS_UNTIL_PROD%</string>
+                <key>prod_weekdays</key>
+                <string>%PROD_WEEKDAYS%</string>
+                <key>prod_not_before</key>
+                <string>%PROD_NOT_BEFORE%</string>
+                <key>prod_not_after</key>
+                <string>%PROD_NOT_AFTER%</string>
             </dict>
             <key>Processor</key>
             <string>com.honestpuck.PatchBot/Production</string>
