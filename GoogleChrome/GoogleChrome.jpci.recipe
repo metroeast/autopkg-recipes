@@ -14,7 +14,7 @@
         <string>Google Chrome</string>
         <key>DAYS_UNTIL_PROD</key>
         <string>3</string>
-        <key>PROD_WEEKDAYS/key>
+        <key>PROD_WEEKDAYS</key>
         <string>0123</string>
         <key>PROD_NOT_BEFORE</key>
         <string>06:00</string>
