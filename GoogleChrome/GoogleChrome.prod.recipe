@@ -8,9 +8,9 @@
         <string>com.github.metroeast.prod.GoogleChrome</string>
         <key>Input</key>
         <dict>
-            <key>NAME</key>
+            <key>PACKAGE</key>
             <string>GoogleChrome</string>
-            <key>TITLE</key>
+            <key>PATCH</key>
             <string>Google Chrome</string>
         </dict>
         <key>MinimumVersion</key>
@@ -21,9 +21,9 @@
                 <key>Arguments</key>
                 <dict>
                     <key>package</key>
-                    <string>%NAME%</string>
+                    <string>%PACKAGE%</string>
                     <key>patch</key>
-                    <string>%TITLE%</string>
+                    <string>%PATCH%</string>
                 </dict>
                 <key>Processor</key>
                 <string>com.honestpuck.PatchBot/Production</string>
