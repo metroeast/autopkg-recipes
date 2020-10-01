@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Google Chrome disk image, imports the package into Jamf Pro Cloud, and attaches the package to the test policies.  Moving test package to production policies conditionally processess afterwards, based on weekday and start and end times.</string>
+    <key>Identifier</key>
+    <string>com.github.metroeast.jpci.googlechrome</string>
+    <key>Input</key>
+    <dict>
+        <key>PACKAGE</key>
+        <string>Firefox</string>
+        <key>PATCH</key>
+        <string>Mozilla Firefox</string>
+        <key>DAYS_UNTIL_PROD</key>
+        <string>3</string>
+        <key>PROD_WEEKDAYS</key>
+        <string>0123</string>
+        <key>PROD_NOT_BEFORE</key>
+        <string>06:00</string>
+        <key>PROD_NOT_AFTER</key>
+        <string>19:00</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.rtrouton.pkg.googlechrome</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pkg_path%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.honestpuck.PatchBot/JPCImporter</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>package</key>
+                <string>%PACKAGE%</string>
+                <key>patch</key>
+                <string>%PATCH%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.honestpuck.PatchBot/PatchManager</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>package</key>
+                <string>%PACKAGE%</string>
+                <key>patch</key>
+                <string>%PATCH%</string>
+                <key>days_until_prod</key>
+                <string>%DAYS_UNTIL_PROD%</string>
+                <key>prod_weekdays</key>
+                <string>%PROD_WEEKDAYS%</string>
+                <key>prod_not_before</key>
+                <string>%PROD_NOT_BEFORE%</string>
+                <key>prod_not_after</key>
+                <string>%PROD_NOT_AFTER%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.honestpuck.PatchBot/Production</string>
+        </dict>
+    </array>
+</dict>
+</plist>
+
