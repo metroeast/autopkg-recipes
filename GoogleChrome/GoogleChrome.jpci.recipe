@@ -66,7 +66,7 @@
                 <string>%PACKAGE%</string>
                 <key>patch</key>
                 <string>%PATCH%</string>
-                <key>days_until_prod</key>
+                <key>min_days_until_prod</key>
                 <string>%PM_MIN_DAYS_FROM_TEST_TO_PROD%</string>
                 <key>prod_weekdays</key>
                 <string>%PM_PROD_WEEKDAYS%</string>
