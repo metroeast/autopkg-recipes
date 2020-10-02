@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Google Chrome disk image, imports the package into Jamf Pro Cloud, and attaches the package to the test policies.  Moving test package to production policies conditionally processess afterwards, based on weekday and start and end times.</string>
+    <string>Downloads the latest Google Chrome disk image, imports the package into Jamf Pro Cloud.  Attaches the package to test policies, per schedule limits.  Moving test package to production policies, per schedule limits.</string>
     <key>Identifier</key>
     <string>com.github.metroeast.jpci.googlechrome</string>
     <key>Input</key>
@@ -12,13 +12,19 @@
         <string>GoogleChrome</string>
         <key>PATCH</key>
         <string>Google Chrome</string>
-        <key>DAYS_UNTIL_PROD</key>
-        <string>3</string>
-        <key>PROD_WEEKDAYS</key>
-        <string>0123</string>
-        <key>PROD_NOT_BEFORE</key>
+        <key>LIMIT_TEST_WEEKDAYS</key>
+        <string>01234</string>
+        <key>LIMIT_TEST_NOT_BEFORE</key>
         <string>06:00</string>
-        <key>PROD_NOT_AFTER</key>
+        <key>LIMIT_TEST_NOT_AFTER</key>
+        <string>19:00</string>
+        <key>MIN_DAYS_FROM_TEST_TO_PROD</key>
+        <string>3</string>
+        <key>LIMIT_PROD_WEEKDAYS</key>
+        <string>0123</string>
+        <key>LIMIT_PROD_NOT_BEFORE</key>
+        <string>06:00</string>
+        <key>LIMIT_PROD_NOT_AFTER</key>
         <string>19:00</string>
     </dict>
     <key>MinimumVersion</key>
@@ -43,6 +49,12 @@
                 <string>%PACKAGE%</string>
                 <key>patch</key>
                 <string>%PATCH%</string>
+                <key>limit_test_weekdays</key>
+                <string>%LIMIT_TEST_WEEKDAYS%</string>
+                <key>limit_test_not_before</key>
+                <string>%LIMIT_TEST_NOT_BEFORE%</string>
+                <key>limit_test_not_after</key>
+                <string>%LIMIT_TEST_NOT_AFTER%</string>
             </dict>
             <key>Processor</key>
             <string>com.honestpuck.PatchBot/PatchManager</string>
@@ -54,14 +66,14 @@
                 <string>%PACKAGE%</string>
                 <key>patch</key>
                 <string>%PATCH%</string>
-                <key>days_until_prod</key>
-                <string>%DAYS_UNTIL_PROD%</string>
-                <key>prod_weekdays</key>
-                <string>%PROD_WEEKDAYS%</string>
-                <key>prod_not_before</key>
-                <string>%PROD_NOT_BEFORE%</string>
-                <key>prod_not_after</key>
-                <string>%PROD_NOT_AFTER%</string>
+                <key>min_days_from_test_to_prod</key>
+                <string>%MIN_DAYS_FROM_TEST_TO_PROD%</string>
+                <key>limit_prod_weekdays</key>
+                <string>%LIMIT_PROD_WEEKDAYS%</string>
+                <key>limit_prod_not_before</key>
+                <string>%LIMIT_PROD_NOT_BEFORE%</string>
+                <key>limit_prod_not_after</key>
+                <string>%LIMIT_PROD_NOT_AFTER%</string>
             </dict>
             <key>Processor</key>
             <string>com.honestpuck.PatchBot/Production</string>
