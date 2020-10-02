@@ -12,19 +12,19 @@
         <string>GoogleChrome</string>
         <key>PATCH</key>
         <string>Google Chrome</string>
-        <key>LIMIT_TEST_WEEKDAYS</key>
+        <key>PM_TEST_WEEKDAYS</key>
         <string>01234</string>
-        <key>LIMIT_TEST_NOT_BEFORE</key>
+        <key>PM_TEST_NOT_BEFORE</key>
         <string>06:00</string>
-        <key>LIMIT_TEST_NOT_AFTER</key>
+        <key>PM_TEST_NOT_AFTER</key>
         <string>19:00</string>
-        <key>MIN_DAYS_FROM_TEST_TO_PROD</key>
+        <key>PM_MIN_DAYS_FROM_TEST_TO_PROD</key>
         <string>3</string>
-        <key>LIMIT_PROD_WEEKDAYS</key>
+        <key>PM_PROD_WEEKDAYS</key>
         <string>0123</string>
-        <key>LIMIT_PROD_NOT_BEFORE</key>
+        <key>PM_PROD_NOT_BEFORE</key>
         <string>06:00</string>
-        <key>LIMIT_PROD_NOT_AFTER</key>
+        <key>PM_PROD_NOT_AFTER</key>
         <string>19:00</string>
     </dict>
     <key>MinimumVersion</key>
@@ -49,12 +49,12 @@
                 <string>%PACKAGE%</string>
                 <key>patch</key>
                 <string>%PATCH%</string>
-                <key>limit_test_weekdays</key>
-                <string>%LIMIT_TEST_WEEKDAYS%</string>
-                <key>limit_test_not_before</key>
-                <string>%LIMIT_TEST_NOT_BEFORE%</string>
-                <key>limit_test_not_after</key>
-                <string>%LIMIT_TEST_NOT_AFTER%</string>
+                <key>test_weekdays</key>
+                <string>%PM_TEST_WEEKDAYS%</string>
+                <key>test_not_before</key>
+                <string>%PM_TEST_NOT_BEFORE%</string>
+                <key>test_not_after</key>
+                <string>%PM_TEST_NOT_AFTER%</string>
             </dict>
             <key>Processor</key>
             <string>com.honestpuck.PatchBot/PatchManager</string>
@@ -66,14 +66,14 @@
                 <string>%PACKAGE%</string>
                 <key>patch</key>
                 <string>%PATCH%</string>
-                <key>min_days_from_test_to_prod</key>
-                <string>%MIN_DAYS_FROM_TEST_TO_PROD%</string>
-                <key>limit_prod_weekdays</key>
-                <string>%LIMIT_PROD_WEEKDAYS%</string>
-                <key>limit_prod_not_before</key>
-                <string>%LIMIT_PROD_NOT_BEFORE%</string>
-                <key>limit_prod_not_after</key>
-                <string>%LIMIT_PROD_NOT_AFTER%</string>
+                <key>days_until_prod</key>
+                <string>%PM_MIN_DAYS_FROM_TEST_TO_PROD%</string>
+                <key>prod_weekdays</key>
+                <string>%PM_PROD_WEEKDAYS%</string>
+                <key>prod_not_before</key>
+                <string>%PM_PROD_NOT_BEFORE%</string>
+                <key>prod_not_after</key>
+                <string>%PM_PROD_NOT_AFTER%</string>
             </dict>
             <key>Processor</key>
             <string>com.honestpuck.PatchBot/Production</string>
