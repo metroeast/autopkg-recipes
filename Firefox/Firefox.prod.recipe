@@ -3,9 +3,9 @@
 <plist version="1.0">
     <dict>
         <key>Description</key>
-        <string>Move Google Chrome package from testing to production</string>
+        <string>Move Mozilla Firefox package from testing to production</string>
         <key>Identifier</key>
-        <string>com.github.metroeast.prod.GoogleChrome</string>
+        <string>com.github.metroeast.prod.firefox</string>
         <key>Input</key>
         <dict>
             <key>PACKAGE</key>

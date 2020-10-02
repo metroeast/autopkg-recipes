@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Google Chrome disk image, imports the package into Jamf Pro Cloud, and attaches the package to the test policies.  Moving test package to production policies conditionally processess afterwards, based on weekday and start and end times.</string>
+    <string>Downloads the latest Mozilla Firefox disk image, imports the package into Jamf Pro Cloud, and attaches the package to the test policies.  Moving test package to production policies conditionally processess afterwards, based on weekday and start and end times.</string>
     <key>Identifier</key>
-    <string>com.github.metroeast.jpci.googlechrome</string>
+    <string>com.github.metroeast.jpci.firefox</string>
     <key>Input</key>
     <dict>
         <key>PACKAGE</key>
