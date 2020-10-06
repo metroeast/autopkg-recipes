@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Intermedia Unite.</string>
 	<key>Identifier</key>
-	<string>com.github.metroeast.download.IntermediaUnite</string>
+	<string>com.github.metroeast.download.intermediaunite</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
