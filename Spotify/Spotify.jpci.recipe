@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Zoom Client for Meetings disk image, imports the package into Jamf Pro Cloud.  Attaches the package to test policies, per schedule limits.  Moving test package to production policies, per schedule limits.</string>
+    <string>Downloads the latest Spotify disk image, imports the package into Jamf Pro Cloud.  Attaches the package to test policies, per schedule limits.  Moving test package to production policies, per schedule limits.</string>
     <key>Identifier</key>
-    <string>com.github.metroeast.jpci.zoom</string>
+    <string>com.github.metroeast.jpci.spotify</string>
     <key>Input</key>
     <dict>
         <key>PACKAGE</key>
-        <string>Zoom</string>
+        <string>Spotify</string>
         <key>PATCH</key>
-        <string>Zoom Client for Meetings</string>
+        <string>Spotify</string>
         <key>PM_TEST_WEEKDAYS</key>
         <string>01234</string>
         <key>PM_TEST_NOT_BEFORE</key>
@@ -30,7 +30,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.mlbz521.pkg.ZoomUS-ForIT</string>
+    <string>com.github.homebysix.pkg.Spotify</string>
     <key>Process</key>
     <array>
         <dict>
