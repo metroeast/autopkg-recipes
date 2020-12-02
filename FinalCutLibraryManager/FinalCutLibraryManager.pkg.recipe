@@ -5,11 +5,11 @@
 	<key>Description</key>
 	<string>Create a package from the Final Cut Library Manager download</string>
 	<key>Identifier</key>
-	<string>com.github.metroeast.pkg.final-cut-library-manager</string>
+	<string>com.github.metroeast.pkg.FinalCutLibraryManager</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Final Cut Library Manager</string>
+		<string>FinalCutLibraryManager</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.9</string>
@@ -91,7 +91,7 @@
             <key>Processor</key>
             <string>PkgCopier</string>
             <key>Comment</key>
-            <string>Finally: Copy and rename the package that AW gave us, applying the version string</string>
+            <string>Finally: Copy and rename the package, applying the version string</string>
             <key>Arguments</key>
             <dict>
                 <key>source_pkg</key>
