@@ -6,11 +6,19 @@
 	<string>Downloads the most recent version of Ableton Live and creates an installer package.
 The version and edition is specified through input variables (see the parent download recipe).
 In order to avoid a pkgbuild error, the SoundCloud extension is removed from the app bundle.
-If a new package is created, the temporary files needed during packaging are deleted.</string>
+If a new package is created, the temporary files needed during packaging are deleted.
+This has been modified to set the pkg name to match what we expect, for PatchBot and Kinobi</string>
 	<key>Identifier</key>
-	<string>com.github.jazzace.pkg.AbletonLive</string>
+	<string>com.github.metroeast.pkg.AbletonLive10Lite</string>
 	<key>Input</key>
-	<dict/>
+	<dict>
+		<key>EDITION</key>
+		<string>lite</string>
+		<key>LIVE_VERS</key>
+		<string>10</string>
+		<key>NAME</key>
+		<string>AbletonLive10Lite</string>
+	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
