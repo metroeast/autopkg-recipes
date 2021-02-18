@@ -11,7 +11,7 @@
             <key>PACKAGE</key>
             <string>MSTeams</string>
             <key>PATCH</key>
-            <string>MSTeams</string>
+            <string>Microsoft Teams</string>
         </dict>
         <key>MinimumVersion</key>
         <string>1.0.0</string>

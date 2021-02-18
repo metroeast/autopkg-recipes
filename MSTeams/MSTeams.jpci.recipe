@@ -11,7 +11,7 @@
         <key>PACKAGE</key>
         <string>MSTeams</string>
         <key>PATCH</key>
-        <string>MSTeams</string>
+        <string>Microsoft Teams</string>
         <key>PM_TEST_WEEKDAYS</key>
         <string>01234</string>
         <key>PM_TEST_NOT_BEFORE</key>
