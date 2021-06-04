@@ -30,7 +30,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>io.github.hjuutilainen.pkg.Packages</string>
+    <string>com.github.metroeast.pkg.Packages</string>
     <key>Process</key>
     <array>
         <dict>
