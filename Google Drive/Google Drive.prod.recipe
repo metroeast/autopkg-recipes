@@ -5,11 +5,11 @@
         <key>Description</key>
         <string>Move Google Drive package from testing to production</string>
         <key>Identifier</key>
-        <string>com.github.metroeast.prod.google drive file stream</string>
+        <string>com.github.metroeast.prod.google drive</string>
         <key>Input</key>
         <dict>
             <key>PACKAGE</key>
-            <string>Google Drive File Stream</string>
+            <string>Google Drive</string>
             <key>PATCH</key>
             <string>Google Drive</string>
         </dict>
