@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Google Drive disk image, imports the package into Jamf Pro Cloud.  Attaches the package to test policies, per schedule limits.  Moving test package to production policies, per schedule limits.</string>
     <key>Identifier</key>
-    <string>com.github.metroeast.jpci.google drive</string>
+    <string>com.github.metroeast.jpci.googledrive</string>
     <key>Input</key>
     <dict>
         <key>PACKAGE</key>

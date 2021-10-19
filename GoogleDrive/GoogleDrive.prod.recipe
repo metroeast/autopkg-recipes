@@ -5,7 +5,7 @@
         <key>Description</key>
         <string>Move Google Drive package from testing to production</string>
         <key>Identifier</key>
-        <string>com.github.metroeast.prod.google drive</string>
+        <string>com.github.metroeast.prod.googledrive</string>
         <key>Input</key>
         <dict>
             <key>PACKAGE</key>
