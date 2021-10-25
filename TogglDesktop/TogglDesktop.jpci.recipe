@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Wireshark 3.4 disk image, imports the package into Jamf Pro Cloud.  Attaches the package to test policies, per schedule limits.  Moving test package to production policies, per schedule limits.</string>
+    <string>Downloads the latest TogglDesktop disk image, imports the package into Jamf Pro Cloud.  Attaches the package to test policies, per schedule limits.  Moving test package to production policies, per schedule limits.</string>
     <key>Identifier</key>
-    <string>com.github.metroeast.jpci.wireshark</string>
+    <string>com.github.metroeast.jpci.toggldesktop</string>
     <key>Input</key>
     <dict>
         <key>PACKAGE</key>
-        <string>Wireshark</string>
+        <string>TogglDesktop</string>
         <key>PATCH</key>
-        <string>Wireshark 3.4</string>
+        <string>TogglDesktop</string>
         <key>PM_TEST_WEEKDAYS</key>
         <string>01234</string>
         <key>PM_TEST_NOT_BEFORE</key>
@@ -30,7 +30,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.homebysix.pkg.Wireshark</string>
+    <string>com.github.homebysix.pkg.TogglDesktop</string>
     <key>Process</key>
     <array>
         <dict>
